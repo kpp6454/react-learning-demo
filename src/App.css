@@ -1,0 +1,14 @@
+p {
+  margin: 0 0 10px;
+}
+.pad40 {
+  padding: 40px 0;
+}
+.gray-back {
+  background-color: #eee;
+}
+.listing-block{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
