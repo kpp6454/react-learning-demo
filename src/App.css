@@ -12,3 +12,6 @@ p {
   margin-bottom: 15px;
   border-bottom: 1px solid #ddd;
 }
+.errormsg{
+  color: rgb(219, 11, 11);
+}

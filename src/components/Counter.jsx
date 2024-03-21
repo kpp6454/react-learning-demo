@@ -3,16 +3,20 @@ import React, { useState } from 'react'
 export const Counter = () => {
   const [count, setCount] = useState(0);
   const [countBy, setCountBy] = useState(1);
+  const [message, setMessage] = useState('');
   
   const handleButtonClick = (action) => {
     if (action === 'increment') {
       setCount(count + countBy);
+      setMessage('')
     } else if (action === 'decrement' && count > countBy) {      
       setCount(count - countBy);            
     }else {
       setCount(count); // Reset count to 0 if decrementing would result in negative value
+      setMessage('Subtraction cannot be performed when the result is negative.');
     }
   };
+
 
   const countValueBy = (actionBy) => {
     if (actionBy === '+') {
@@ -24,7 +28,7 @@ export const Counter = () => {
 
   return (
     <>      
-      <h3>Counter Value is: <strong>{count}</strong></h3>
+      <h3>Counter Value is: <strong>{count}</strong><br/>{message && <small className='errormsg'>{message}</small>}</h3>      
       <div>
           <button onClick={()=> handleButtonClick('decrement')}><strong>-</strong></button>          
           <button onClick={()=> handleButtonClick('increment')}><strong>+</strong></button>
