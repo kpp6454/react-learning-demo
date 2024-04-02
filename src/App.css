@@ -15,3 +15,42 @@ p {
 .errormsg{
   color: rgb(219, 11, 11);
 }
+.todo-app-sec input[type="text"] {
+  display: inline-block;
+  height: 45px;
+  border-radius: 0;
+  border: 2px solid #4cd5c5;
+  font-size: 18px;
+  outline: none;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 400px;
+}
+.todo-app-sec button {
+    font-size: 18px;
+    height: 49px;
+    vertical-align: bottom;
+}
+ul.display-todoitems {
+  display: block;
+  text-align: left;
+  padding: 0;
+  margin: 35px 0;
+  font-size: 18px;
+  list-style: none;
+}
+ul.display-todoitems li {
+  padding: 10px 15px;
+  background: #eee;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+ul.display-todoitems span.del-todo {
+  display: inline-block;
+  float: right;
+  width: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 22px;
+  color: #d80000;
+}

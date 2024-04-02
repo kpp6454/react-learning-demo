@@ -2,6 +2,9 @@ import PersonDetailsArrayOfObject from "./components/PersonDetailsArrayOfObject"
 import PassingPropsToComp from "./components/PassingPropsToComp";
 import "./App.css";
 import { Counter } from "./components/Counter";
+import { Todo } from "./components/TodoApp/Todo";
+import { AiTodo } from "./components/AiTodo";
+
 
 function App() {
   const personDetails = [
@@ -22,6 +25,8 @@ function App() {
     }
   ]
 
+
+
   return (
     <>
       <section className="pad40">
@@ -34,6 +39,13 @@ function App() {
         <div className="container">
             <h2>Below Example of Counter value Increment & Decrement using State Hook</h2>
             <Counter></Counter>
+        </div>
+      </section>
+      <section className='todo-app-sec pad40 text-center'>
+        <div className="container">
+          <h2>Basic Todo app example</h2>
+          <Todo></Todo>          
+          {/*<AiTodo></AiTodo>*/}
         </div>
       </section>
     </>
