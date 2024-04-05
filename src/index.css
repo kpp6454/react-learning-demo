@@ -45,7 +45,7 @@ button {
   background-color: #4cd5c5;
   color: #fff;
 }
-button:hover, button:focus {
+button:hover, button:focus,ul.display-todoitems li span.mark:hover,ul.display-todoitems li span.mark:focus {
   border-color: #49e2d0;
   background-color: #49e2d0;
   outline: none;

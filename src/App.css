@@ -51,6 +51,25 @@ ul.display-todoitems span.del-todo {
   width: 25px;
   text-align: center;
   cursor: pointer;
-  font-size: 22px;
-  color: #d80000;
+  font-size: 19px;
+  background: #d80000;
+  margin-left: 6px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+ul.display-todoitems span.del-todo:hover,ul.display-todoitems span.del-todo:focus{
+  background-color: #fc0f0f;
+}
+ul.display-todoitems li span.mark {
+  float: right;
+  background: #4cd5c5;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+ul.display-todoitems li.read {
+  text-decoration: line-through;
+  background: #ffc7c7;
 }
