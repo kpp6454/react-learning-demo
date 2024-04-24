@@ -3,8 +3,7 @@ import PassingPropsToComp from "./components/PassingPropsToComp";
 import "./App.css";
 import { Counter } from "./components/Counter";
 import { Todo } from "./components/TodoApp/Todo";
-import { AiTodo } from "./components/AiTodo";
-
+import { TabModule } from "./components/Tab/TabModule";
 
 function App() {
   const personDetails = [
@@ -44,8 +43,13 @@ function App() {
       <section className='todo-app-sec pad40 text-center'>
         <div className="container">
           <h2>Basic Todo app example</h2>
-          <Todo></Todo>          
-          {/*<AiTodo></AiTodo>*/}
+          <Todo></Todo>                    
+        </div>
+      </section>
+      <section className='pad40 tab-sec gray-back'>
+        <div className="container">
+          <h2 className='text-center'>Tab Module Example</h2>
+          <TabModule></TabModule>
         </div>
       </section>
     </>
