@@ -1,37 +1,20 @@
+import "./App.css";
 import PersonDetailsArrayOfObject from "./components/PersonDetailsArrayOfObject";
 import PassingPropsToComp from "./components/PassingPropsToComp";
-import "./App.css";
 import { Counter } from "./components/Counter";
 import { Todo } from "./components/TodoApp/Todo";
 import { TabModule } from "./components/Tab/TabModule";
+import PersonDetailsData from "./components/PersonDetailsData";
+import DynamicButton from "./components/DynamicButton/DynamicButton";
 
 function App() {
-  const personDetails = [
-    {
-      name: "Karan Parmar",
-      age: "30",
-      gender: "Male",
-    },
-    {
-      name: "Chandni parmar",
-      age: "27",
-      gender: "Female",
-    },
-    {
-      name: "Prakash Parmar",
-      age: "62",
-      gender: "Male",
-    }
-  ]
-
-
-
+ 
   return (
     <>
       <section className="pad40">
         <div className="container">
             <PassingPropsToComp title="person details are below:" /><br/>
-            <PersonDetailsArrayOfObject personDetails={personDetails} />
+            <PersonDetailsArrayOfObject personDetails={PersonDetailsData} />
         </div>        
       </section>
       <section className="pad40 gray-back">
@@ -50,6 +33,11 @@ function App() {
         <div className="container">
           <h2 className='text-center'>Tab Module Example</h2>
           <TabModule></TabModule>
+        </div>
+      </section>
+      <section className="pad40">
+        <div className="container">
+            <DynamicButton></DynamicButton>
         </div>
       </section>
     </>

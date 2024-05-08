@@ -70,13 +70,33 @@ ul.display-todoitems li.read {
 ul.tab-btns{
   list-style: none;
   padding: 0;
+  margin: 0 0 6px;
 }
 ul.tab-btns li{
   display: inline-block;
+  position: relative;
+}
+ul.tab-btns li button{
+  position: relative;
+}
+ul.tab-btns li button:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 2px);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 6px solid #4cd5c5;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+ul.tab-btns li button.active:after{
+  border-top: 6px solid #4eeddb;  
+  opacity: 1;
 }
 #tab-content{
   border: 2px solid #4cd5c5;
   padding: 20px;
   border-radius: 6px;
-  margin: 20px 0 0;
+  background-color: #fff;
 }

@@ -13,10 +13,10 @@ export const TabModule = () => {
   return (
     <div className="tab-wrap">      
       <ul className="tab-btns">
-        <TabButton onSelect={() => handleSelect('tab1')}>Tab 1</TabButton>
-        <TabButton onSelect={() => handleSelect('tab2')}>Tab 2</TabButton>
-        <TabButton onSelect={() => handleSelect('tab3')}>Tab 3</TabButton>
-        <TabButton onSelect={() => handleSelect('tab4')}>Tab 4</TabButton>
+        <TabButton className={selectTopic === 'tab1' ? "active" : undefined} onClick={() => handleSelect('tab1')}>Tab 1</TabButton>
+        <TabButton className={selectTopic === 'tab2' ? "active" : undefined} onClick={() => handleSelect('tab2')}>Tab 2</TabButton>
+        <TabButton className={selectTopic === 'tab3' ? "active" : undefined} onClick={() => handleSelect('tab3')}>Tab 3</TabButton>
+        <TabButton className={selectTopic === 'tab4' ? "active" : undefined} onClick={() => handleSelect('tab4')}>Tab 4</TabButton>
       </ul>
       <div id="tab-content">
           <h3>{TabData[selectTopic].title}</h3>
