@@ -6,8 +6,14 @@ import { Todo } from "./components/TodoApp/Todo";
 import { TabModule } from "./components/Tab/TabModule";
 import PersonDetailsData from "./components/PersonDetailsData";
 import DynamicButton from "./components/DynamicButton/DynamicButton";
+import SpreadOperatorExample from "./components/SpreadOperatorExample"
+import TwoWayBinding from "./components/TwoWayBinding/TwoWayBinding";
+
 
 function App() {
+
+  // Usage with spread operator
+  const userInfo = { name: 'John', age: 30, location: 'New York' };
  
   return (
     <>
@@ -38,6 +44,18 @@ function App() {
       <section className="pad40">
         <div className="container">
             <DynamicButton></DynamicButton>
+        </div>
+      </section>
+      <section className="pad40 gray-back">
+        <div className="container">
+            <h2>Prop Spreading in Components</h2>
+            <SpreadOperatorExample {...userInfo}/>            
+        </div>
+      </section>
+      <section className="pad40">
+        <div className="container">
+          <h2 className='text-center'>Two Way Data Binding Example</h2>          
+          <TwoWayBinding />
         </div>
       </section>
     </>

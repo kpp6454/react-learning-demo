@@ -20,6 +20,9 @@ a:hover {
 body {
   margin: 0;
 }
+textarea{
+  resize: none;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
@@ -93,9 +96,7 @@ h3 strong{
 }
 
 .filled-button {
-  background: linear-gradient(#7fa1f7, #6085e4);
-  color: #030a1b;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  background: #67d7b0;
 }
 
 .filled-button:hover {
