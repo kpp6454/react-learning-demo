@@ -6,7 +6,7 @@ export const Todo = () => {
 
   function submitData(e) {
     e.preventDefault();
-    if (todo.trim() !== "") {        
+    if (todo.trim() !== "") {
       setTodoItems([{ text: todo, read: false }, ...todoItems]);
     }
     setTodo("");      

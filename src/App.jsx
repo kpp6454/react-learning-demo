@@ -8,6 +8,7 @@ import PersonDetailsData from "./components/PersonDetailsData";
 import DynamicButton from "./components/DynamicButton/DynamicButton";
 import SpreadOperatorExample from "./components/SpreadOperatorExample"
 import TwoWayBinding from "./components/TwoWayBinding/TwoWayBinding";
+import { StateLifting } from "./components/StateLifting/StateLifting";
 
 
 function App() {
@@ -56,6 +57,12 @@ function App() {
         <div className="container">
           <h2 className='text-center'>Two Way Data Binding Example</h2>          
           <TwoWayBinding />
+        </div>
+      </section>
+      <section className="pad40 gray-back lifting-state-sec">
+        <div className="container">
+          <h2 className='text-center'>State Lifting Up Example</h2>          
+          <StateLifting />
         </div>
       </section>
     </>

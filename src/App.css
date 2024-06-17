@@ -7,7 +7,7 @@
 .errormsg{
   color: rgb(219, 11, 11);
 }
-.todo-app-sec input[type="text"] {
+input[type="text"] {
   display: inline-block;
   height: 45px;
   border-radius: 0;
@@ -18,7 +18,7 @@
   width: 100%;
   max-width: 400px;
 }
-.todo-app-sec button {
+ button {
     font-size: 18px;
     height: 49px;
     vertical-align: bottom;
@@ -168,4 +168,8 @@ ul.tab-btns li button.active:after{
   margin: 0.2rem 0;
     font-size: 16px;
     text-align: right;
+}
+
+.lifting-state-sec{
+  
 }
